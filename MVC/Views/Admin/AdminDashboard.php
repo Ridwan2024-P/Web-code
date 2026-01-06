@@ -16,8 +16,8 @@
      
        <div class="sidebar">
            <img src="/Project personal/MVC/Images/445492922_122100097214350632_1896056624552573141_n.jpg" alt="Admin">
-              <a href="">Dashboard</a>
-                   <a href="">Manage Users</a>
+              <a href="../Controller/AdminDashboardController.php">Dashboard</a>
+                   <a href="../Controller/AdminUsersController.php">Manage Users</a>
                 <a href="">Manage Events</a>
                   <a href="">Registrations</a>
                   <a href="">Manage Tasks</a>
