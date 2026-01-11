@@ -9,14 +9,15 @@
 
 </head>
 <body>
- <div class="sidebar">
+   <div class="sidebar">
            <img src="/Project personal/MVC/Images/445492922_122100097214350632_1896056624552573141_n.jpg" alt="Admin">
-               <a href="../Controller/AdminDashboardController.php">Dashboard</a>
+              <a href="../Controller/AdminDashboardController.php">Dashboard</a>
                    <a href="../Controller/AdminUsersController.php">Manage Users</a>
-                <a href="">Manage Events</a>
-                  <a href="">Registrations</a>
-                  <a href="">Manage Tasks</a>
-                  <a href="../Controller/AdminSettingsController.php">Settings</a>
+                <a href="../Controller/EventController.php">Manage Events</a>
+                  <a href="../Controller/RegistrationController.php">Registrations</a>
+                  <a href="../Controller/TaskController.php">Manage Tasks</a>
+                
+                     <a href="../Controller/AdminSettingsController.php">Settings</a>
              <a href="/Project personal/MVC/Controller/logout.php">Logout</a>
 
 </div>
@@ -115,6 +116,33 @@
     </form>
 </div>
 <?php endif; ?>
+<script>
+
+const searchInput = document.querySelector('.input-custom');
+const table = document.querySelector('.table-custom tbody');
+
+searchInput.addEventListener('input', function() {
+    const filter = searchInput.value.toLowerCase();
+    const rows = table.querySelectorAll('tr');
+
+    rows.forEach(row => {
+        const cells = row.querySelectorAll('td');
+        let match = false;
+
+        cells.forEach(cell => {
+            if (cell.textContent.toLowerCase().includes(filter)) {
+                match = true;
+            }
+        });
+
+        if (match) {
+            row.style.display = '';
+        } else {
+            row.style.display = 'none';
+        }
+    });
+});
+</script>
 
 </body>
 </html>

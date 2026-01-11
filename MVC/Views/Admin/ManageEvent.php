@@ -56,13 +56,12 @@
                    <a href="../Controller/AdminUsersController.php">Manage Users</a>
                 <a href="../Controller/EventController.php">Manage Events</a>
                   <a href="../Controller/RegistrationController.php">Registrations</a>
-                  <a href="">Manage Tasks</a>
+                  <a href="../Controller/TaskController.php">Manage Tasks</a>
                 
                      <a href="../Controller/AdminSettingsController.php">Settings</a>
              <a href="/Project personal/MVC/Controller/logout.php">Logout</a>
 
 </div>
-
 
 <div class="top-navbar">
     <h5>Manage Events</h5>

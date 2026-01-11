@@ -154,11 +154,9 @@ tr:hover
   <?php if($_SESSION['role'] === 'admin'): ?>
     <a href="../Controller/AdminDashboardController.php">Dashboard</a>
                    <a href="../Controller/AdminUsersController.php">Manage Users</a>
-                <a href="">Manage Events</a>
+                <a href="../Controller/EventController.php">Manage Events</a>
                   <a href="../Controller/RegistrationController.php">Registrations</a>
-                  <a href="">Manage Tasks</a>
-                
-                     <a href="../Controller/AdminSettingsController.php">Settings</a>
+                  <a href="../Controller/TaskController.php">Manage Tasks</a>
       
   <?php else: ?>
     <a href="index.php?action=volunteerDashboard">Dashboard</a>
@@ -168,6 +166,7 @@ tr:hover
   <?php endif; ?>
 
 <a href="/Project personal/MVC/Controller/logout.php">Logout</a>
+ 
 </div>
 
 
