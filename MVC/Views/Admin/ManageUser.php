@@ -16,8 +16,7 @@
                 <a href="">Manage Events</a>
                   <a href="">Registrations</a>
                   <a href="">Manage Tasks</a>
-                  <a href="">Reports</a>
-                     <a href="">Settings</a>
+                  <a href="../Controller/AdminSettingsController.php">Settings</a>
              <a href="/Project personal/MVC/Controller/logout.php">Logout</a>
 
 </div>
