@@ -18,8 +18,8 @@
            <img src="/Project personal/MVC/Images/445492922_122100097214350632_1896056624552573141_n.jpg" alt="Admin">
               <a href="../Controller/AdminDashboardController.php">Dashboard</a>
                    <a href="../Controller/AdminUsersController.php">Manage Users</a>
-                <a href="">Manage Events</a>
-                  <a href="/project personal/mvc/Views/Admin/RegistrationDashboard.php">Registrations</a>
+                <a href="../Controller/EventController.php">Manage Events</a>
+                  <a href="../Controller/RegistrationController.php">Registrations</a>
                   <a href="">Manage Tasks</a>
                 
                      <a href="../Controller/AdminSettingsController.php">Settings</a>
